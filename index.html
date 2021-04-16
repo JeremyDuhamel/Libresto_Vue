@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="stylesheet" href="style/debug.css"> -->
+    <title>Libresto</title>
+</head>
+<body>
+    <div id="app">
+        <head-title :nom-resto="nomResto"></head-title>
+        
+        <section class="section has-text-centered" id="home">
+            <h2 class="title is-size-3"> {{ titleIntro }}</h2>
+            <p class="paragraph is-italic is-size-5">{{ paragraph }}</p>
+        </section>
+
+        <section class="section is-paddingless-top">
+            <div class="columns">
+                <div class="column has-text-centered" id="resto1">
+                    <div class="notification">
+                        <figure class="image is-16by9">
+                            <img src="img/resto1.jpg" alt="">
+                        </figure>
+                        <br>
+                        <p class="title">La Cantina de Tatooine</p>
+                        <p class="is-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora assumenda at id? Quisquam fugit adipisci aliquam sequi? Voluptatem facilis in eveniet pariatur ab. Similique saepe modi culpa, velit facere qui?</p>
+                        <br>
+                        <a href="menu.html" class="button is-large is-italic" @click="nomResto = ' - La Cantina de Tatooine'">Je vais ici !</a>
+                    </div>
+                </div>
+                <div class="column has-text-centered" id="resto2">
+                    <div class="notification">
+                        <figure class="image is-16by9">
+                            <img src="img/resto2.jpg" alt="">
+                        </figure>
+                        <br>
+                        <p class="title">Le Poney Fringant</p>
+                        <p class="is-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora assumenda at id? Quisquam fugit adipisci aliquam sequi? Voluptatem facilis in eveniet pariatur ab. Similique saepe modi culpa, velit facere qui?</p>
+                        <br>
+                        <a href="menu.html" class="button is-large is is-italic" @click="nomResto = ' - Le Poney Fringant'">Je vais ici !</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <foot :footer="footer"></foot>
+    </div>
+    <script src="node_modules/vue/dist/vue.common.dev.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

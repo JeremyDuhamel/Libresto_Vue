@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="style/style.css">
+    <!--<link rel="stylesheet" href="style/debug.css">-->
+    <title>Authentification</title>
+</head>
+<body>
+    <div id="app">
+        <head-title :nom-resto="nomResto"></head-title>
+        <section class="section is-large container is-max-desktop">
+            <form class="is-one-third is-center">
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                    <input class="input" type="email" placeholder="e.g. ada@lovelace.dev">
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Mot de passe</label>
+                    <div class="control">
+                    <input class="input" type="password" placeholder="********">
+                    </div>
+                </div>
+                
+                <button class="button is-primary">Se connecter</button>
+            </form>
+        </section>
+        <foot :footer="footer"></foot>
+    </div>
+    <script src="node_modules/vue/dist/vue.common.dev.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

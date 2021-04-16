@@ -1,0 +1,14 @@
+.red{
+    background-color : #ce0033;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.is-paddingless-top {
+    padding-top: 0;
+}
+.is-paddingless-bottom {
+    padding-bottom: 0;
+}
